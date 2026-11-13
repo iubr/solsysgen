@@ -3,13 +3,26 @@
 ## What is this software for
 Implements a Python code which generates a solar system based on a simple heliocentric model with circular orbits in 2D.
 
+This is the code structure:
+
+```text
+solsysgen/
+|----- __init__.py
+|----- celestial_object.py     # Parent class of Sun and Planet 
+|----- sun.py                  # Sun class
+|----- planet.py               # Planet class
+|----- solarsystem.py          # SolarSystem class
+|----- checkpoint.py           # Read/write from/to checkpoint files.
+```
+
+Here is an equation:
 ```math
 E = mc^2
 ```
 
 a link [here](https://astronomy.stackexchange.com/questions/26728/simple-mathematical-models-of-solar-systems)
 
-- Implement a Sun class with mass, radius and luminosity as attributes. $E=mc^2$
+- Implement a Sun class with mass, radius and luminosity as attributes. This is an inline equation $E=mc^2$
 
 - Implement a Planet class with attributes mass, radius, type, starting position, distance from the sun, orbital velocity, period, etc. 
 
